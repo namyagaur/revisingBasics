@@ -20,7 +20,7 @@ const express = require("express");
 const app = express();
 
 app.get('/tasks',(req,res)=>{
-    res.json(tasks);
+    res.status(200).json(tasks);
 });
 
 app.listen(3000, ()=>{
